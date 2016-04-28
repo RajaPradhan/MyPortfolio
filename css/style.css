@@ -1,0 +1,239 @@
+/** imports --------------------------------------------- Starts**/
+
+@import url(https://fonts.googleapis.com/css?family=Salsa);
+
+/** imports --------------------------------------------- Ends**/
+
+/** General CSS ----------------------------------------- Starts**/
+.headers {
+	font-family: 'Salsa', Verdana, Tahoma, 'Lucida Sans Unicode';
+	font-size: 22px;
+}
+
+.topic-container {
+	display: table;
+	text-align: center;
+	height: 100%;
+	padding-top: 40px;
+}
+
+.topic {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.topic-content {
+	font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.pad-top {
+	padding-top: 40px;
+}
+
+/** General CSS ----------------------------------------- Ends**/
+
+/*-------------------------- Scroll to Top----------------Starts */
+.scrollToTop{
+	position:fixed;
+	z-index: 1000;
+	top:75px;
+	right:40px;
+	display:none;
+	text-align:center; 
+	text-decoration:none;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+/*-------------------------- Scroll to Top----------------Ends */
+
+/** home ------------------------------------------------ Starts**/
+
+#home-container {
+	height: 70em;
+	background: url("../images/home-bg1.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+#home-row1 {
+	overflow-x: hidden;
+}
+
+#home-row2 {
+	overflow-x: hidden;
+	margin-top: 2em;
+}
+
+/** home ----------------------------------------------- Ends**/
+
+/** InfoSec -------------------------------------------- Starts**/
+
+#infosec-container {
+	height: 40em;
+	background-color: #E4D29D;
+    background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
+    border-top: 20px solid rgba(238, 200, 86, .5);
+}
+
+.page-curl {
+	background:#FFF;
+	margin:40px 10px;
+	padding-bottom: 3em;
+	min-height: 547px;
+	border: 1px solid rgba(128, 128, 128, 0.46);
+}
+
+.shadow-bottom
+{
+  position: relative;
+}
+.shadow-bottom:before, .shadow-bottom:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 35px 20px #777;
+  transform: rotate(-8deg);
+}
+.shadow-bottom:after
+{
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+#certifications-topic-container {
+	padding-top: 0px;
+	padding-bottom: 4em;
+}
+
+/** InfoSec -------------------------------------------- Ends**/
+
+/** WebDev --------------------------------------------- Starts**/
+#webdev-row {
+	overflow-x: hidden;
+	background-color: #E4D29D;
+    background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+}
+
+.snapshots {
+	height: 160px;
+    width: 300px;
+    border: 2px rgba(0, 0, 0, 0.48) groove;
+}
+
+.snapshots-main-container {
+	padding-bottom: 4em;
+}
+
+.snapshots-conatiner {
+	padding-top: 2em;
+}
+
+/** WebDev ---------------------------------------------- Ends**/
+
+/** WebDesign ------------------------------------------- Starts**/
+#webdesign-row {
+	background-color: #FFF1CC;
+    background-image: linear-gradient(to bottom, #FFF1CC,rgb(255, 238, 204));
+	padding-bottom: 4em;
+}
+
+
+/** WebDesign ------------------------------------------- Ends**/
+
+/** Contact - Starts**/
+#contact-row {
+	overflow-x: hidden;
+	background-color: #E0671F;
+	padding-bottom: 2em;
+}
+#contact-box {
+	height:400px;
+	margin-top:40px;
+	padding-top:40px;
+	background-image: linear-gradient(to bottom, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+	box-shadow: 0 4px 16px 3px rgba(0,0,0,0.59);
+}
+
+#map {
+	height:400px;
+	margin-left:auto;
+}
+
+#copyright-text {
+	padding-top: 40px;
+}
+
+/** Contact - Ends**/
+
+/** MediaQueries - Starts**/
+/**
+ * Extra small devices (phones, less than 768px)
+ * Small devices (tablets, 768px and up)
+ * Medium devices (desktops, 992px and up)
+ * Large devices (large desktops, 1200px and up)
+ */
+ 
+@media only screen
+and (max-width: 768px) {
+	#home-container {
+		height: 30em;
+	}
+	
+	.topic-container {
+		width: 100%;
+		height: 20%;
+	}
+	
+	.pad-ui-content {
+		padding-top: 10px;
+	}
+	
+	#up-arrow {
+		width : 24 px;
+		height : 24 px;
+	}
+}
+
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 992px) {
+	.pad-ui-content {
+		padding-top: 10px;
+	}
+	
+	#up-arrow {
+		width : 24 px;
+		height : 24 px;
+	}
+}
+
+@media only screen
+and (min-width: 992px)
+and (max-width: 1200px) {
+	.pad-ui-content {
+		padding-top: 92px;
+	}
+}
+
+@media only screen
+and (min-width: 1200px)
+{
+	.pad-ui-content {
+		padding-top: 92px;
+	}
+}
+/** MediaQueries - Ends**/

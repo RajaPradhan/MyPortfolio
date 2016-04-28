@@ -1,0 +1,164 @@
+/** CSS for flip animation **/
+
+#tiles-container {
+	height: 100%;
+	margin-top: 7em;
+	padding-right: 5px;
+}
+
+/* Entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	transform-style: preserve-3d;
+}
+/*  UPDATED! flip the pane when hovered */
+.flip-container:hover .back {
+	transform: rotateY(0deg);
+}
+.flip-container:hover .front {
+	transform: rotateY(180deg);
+}
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	display: table;
+    text-align: center;
+}
+
+.front p, .back p {
+	color: Black;
+	font-weight: bold;
+	font-size: 20px;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(-180deg);
+}
+
+
+/** My CSS **/
+#front1 {
+	background-color: #E65527;
+	opacity: 0.5;
+}
+
+#back1 {
+	background-color: #E65527;
+	opacity: 0.5;
+}
+
+#front2 {
+	background-color: #5EA07F;
+	opacity: 0.5;
+}
+
+#back2 {
+	background-color: #5EA07F;
+	opacity: 0.5;
+}
+
+#front3 {
+	background-color: #D5BC3A;
+	opacity: 0.5;
+}
+
+#back3 {
+	background-color: #D5BC3A;
+	opacity: 0.5;
+}
+
+#front4 {
+	background-color: #FF9900;
+	opacity: 0.5;
+}
+
+#back4 {
+	background-color: #FF9900;
+	opacity: 0.5;
+}
+
+#front5 {
+	background-color: #C8FE2E;
+	opacity: 0.5;
+}
+
+#back5 {
+	background-color: #C8FE2E;
+	opacity: 0.5;
+}
+
+#front6 {
+	background-color: #DA81F5;
+	opacity: 0.5;
+}
+
+#back6 {
+	background-color: #DA81F5;
+	opacity: 0.5;
+}
+
+@media only screen
+and (max-width: 768px) {
+	.flip-container, .front, .back {
+		width: 6em;
+		height: 6em;
+	}
+	
+	.front p, .back p {
+		font-size: 14px;
+	}
+
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 992px) {
+	.flip-container, .front, .back {
+		width: 12em;
+		height: 10em;
+	}
+}
+
+@media only screen
+and (min-width: 992px)
+and (max-width: 1200px) {
+	.flip-container, .front, .back {
+		width: 15em;
+		height: 16em;
+	}
+}
+
+@media only screen
+and (min-width: 1200px)
+{
+	.flip-container, .front, .back {
+		width: 18em;
+		height: 18em;
+	}
+}
